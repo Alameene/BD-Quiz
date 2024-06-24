@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container" id="name-input-container">
+        <h2>Enter your name and email to start the quiz</h2>
+        <input type="text" id="user-name" placeholder="Your name" required>
+        <input type="email" id="user-email" placeholder="Your email" required>
+        <button id="start-btn" class="start-btn">Start Quiz</button>
+    </div>
+    <div class="quiz-container" id="quiz" style="display: none;">
+        <div id="quiz-question" class="quiz-question"></div>
+        <div class="quiz-options">
+            <button class="quiz-option" id="a"></button>
+            <button class="quiz-option" id="b"></button>
+            <button class="quiz-option" id="c"></button>
+            <button class="quiz-option" id="d"></button>
+        </div>
+        <button id="next-btn" class="next-btn" style="display: none;">Next Question</button>
+    </div>
+    <div class="score-container" id="score-container"></div>
+    <script src="quiz.js"></script>
+</body>
+</html>
